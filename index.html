@@ -6,10 +6,77 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>title</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="splide/css/splide.min.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <h1>HELLO</h1>
+    <div class="container1440">
+        <header>
+            <nav class="navbar">
+                <div class="navbar__menu">
+                    <span class="navbar__menu__logo">Логотип</span>
+                    <div class="navbar__menu__links">
+                        <a href="#">Проекты</a>
+                        <a href="#">Технологии</a>
+                        <a href="#">Работа с нами</a>
+                        <a href="#">Этапы работ</a>
+                        <a href="#">Отзывы</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+                <div class="navbar__contact">
+                    <a href="#">Связаться с нами</a>
+                </div>
+            </nav>
+            <div class="main-slide" id="slider1">
+                <div>
+                    <span class="slide--text">Енисей<br>111,4 м2<br><span class="slide--text__min">Каркас</span></span>
+                    <img class="slide--item" src="img/slide1.png" alt="slide">
+                </div>
+                <div>
+                    <span class="slide--text">Катунь<br>42,5 м2<br><span class="slide--text__min">Каркас</span></span>
+                    <img class="slide--item" src="img/slide2.png" alt="slide">
+                </div>
+                <div>
+                    <span class="slide--text">Волга<br>114,3 м2<br><span class="slide--text__min">Каркас</span></span>
+                    <img class="slide--item" src="img/slide3.png" alt="slide">
+                </div>
+                <div>
+                    <span class="slide--text">Днепр<br>107,14 м2<br><span class="slide--text__min">Каркас</span></span>
+                    <img class="slide--item" src="img/slide4.png" alt="slide">
+                </div>
+                <div>
+                    <span class="slide--text">Алтай<br>145,4 м2<br><span class="slide--text__min">Каркас</span></span>
+                    <img class="slide--item" src="img/slide5.png" alt="slide">
+                </div>
+            </div>
+            <div class="arrow">
+                <span id="scroll"></span>
+            </div>
+        </header>
+        <main>
+
+                <section class="projects">
+                    <p>Наши проекты</p>
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img class="slides" src="img/slider2_1.png" alt="slide"></li>
+                                <li class="splide__slide"><img class="slides" src="img/slider2_2.png" alt="slide"></li>
+                                <li class="splide__slide"><img class="slides" src="img/slider2_3.png" alt="slide"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#">Смотреть все</a>
+                </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="splide/js/splide.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

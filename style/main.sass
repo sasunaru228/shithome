@@ -1,3 +1,227 @@
+@font-face
+  font-family: "Jost"
+  src: url(../fonts/Jost-Regular.ttf)
+  font-weight: normal
+@font-face
+  font-family: "Jost"
+  src: url(../fonts/Jost-Bold.ttf)
+  font-weight: Bold
+@font-face
+  font-family: "Jost"
+  src: url(../fonts/Jost-SemiBold.ttf)
+  font-weight: 600
 *
   margin: 0
   padding: 0
+.container
+  width: 1440px
+  margin: 0 auto
+.container1440
+  min-width: 1440px
+  margin: 0 auto
+header
+  position: relative
+.navbar
+  border-bottom: 8px solid #FFBD6F
+  height: 66px
+  width: 100%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  &__contact
+    a
+      padding: 6px 20px
+      background: #FFBD6F
+      text-decoration: none
+      margin-right: 40px
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 23px
+      color: #240000
+  &__menu
+    display: flex
+    align-items: center
+    margin-left: 40px
+    &__logo
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 52px
+      color: #000000
+    &__links
+      margin-left: 95px
+      a
+        margin-right: 40px
+        font-family: Jost, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 35px
+        color: #8E4E33
+        text-decoration: none
+header
+  .slick-dotted.slick-slider
+    margin-bottom: 0
+  .main-slide
+    width: 100%
+  .slick-dots
+    display: flex
+    flex-direction: column
+    left: 35px
+    top: calc(50% - 130px)
+    width: auto
+    height: auto
+    li
+      width: 28px
+      height: 28px
+      margin-bottom: 20px
+      button
+        width: 28px
+        height: 28px
+        &:before
+          opacity: 0.7
+          box-sizing: border-box
+          width: 28px
+          height: 28px
+          background-color: transparent
+          border: 3px solid #FFFFFF
+          content: ''
+          border-radius: 50px
+          transition: opacity 0.2s
+          &:hover
+            opacity: 1
+    li.slick-active
+      button
+        &:before
+          background-color: white
+          opacity: 1
+  .main-slide
+    margin-bottom: 0
+    .slick-list
+      .slick-track
+        .slick-slide
+          .slide--item
+            width: 100%
+  .slide--text
+    position: absolute
+    left: 115px
+    top: calc(50% - 120px)
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 64px
+    line-height: 74px
+    color: #FFFFFF
+    &__min
+      position: absolute
+      bottom: -48px
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 48px
+      line-height: 42px
+      color: #FFFFFF
+  .arrow
+    position: absolute
+    bottom: 30px
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    span
+      padding: 20px
+      cursor: pointer
+      width: 68px
+      height: 36px
+      background: url("../img/scroll.png") center center no-repeat
+      transition: transform 0.3s
+      &:hover
+        transform: translateY(+15px)
+.projects
+  display: flex
+  flex-direction: column
+  align-items: center
+  p
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 64px
+    line-height: 92px
+    color: #723D2F
+    margin: 42px 0
+  a
+    margin: 53px 0
+    padding: 18px 21px
+    background: #FFBD6F
+    border-radius: 7px
+    text-decoration: none
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+    color: #240000
+.splide
+  width: 100%
+  height: 442px
+  &__list
+    .splide__slide
+      filter: blur(6px)
+      transition: filter 0.3s
+      img
+        height: 395px
+        width: 615px
+    li.is-active
+      filter: none
+      img
+        height: 442px
+        width: 693px
+    li
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+.splide__arrow--next
+  right: 320px
+  width: 30px
+  height: 54px
+  background: url("../img/next.png")
+  svg
+    display: none
+.splide__arrow--prev
+  width: 30px
+  height: 54px
+  background: url("../img/prev.png")
+  left: 320px
+  svg
+    display: none
+@media (max-width: 1439px)
+  body
+    display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
