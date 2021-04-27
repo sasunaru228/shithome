@@ -41,6 +41,7 @@ header
       font-size: 16px
       line-height: 23px
       color: #240000
+      border-radius: 6px
   &__menu
     display: flex
     align-items: center
@@ -137,7 +138,7 @@ header
       cursor: pointer
       width: 68px
       height: 36px
-      background: url("../img/scroll.png") center center no-repeat
+      background: url("../img/scroll.svg") center center no-repeat
       transition: transform 0.3s
       &:hover
         transform: translateY(+15px)
@@ -190,16 +191,254 @@ header
   right: 320px
   width: 30px
   height: 54px
-  background: url("../img/next.png")
+  background: url("../img/next.svg")
   svg
     display: none
 .splide__arrow--prev
   width: 30px
   height: 54px
-  background: url("../img/prev.png")
+  background: url("../img/prev.svg")
   left: 320px
   svg
     display: none
+.technology
+  display: flex
+  flex-direction: column
+  align-items: center
+  background: url("../img/technology.png")
+  background-size: 100% 100%
+  backdrop-filter: blur(12px)
+  p
+    margin-top: 55px
+    margin-bottom: 52px
+    font-family: Jost,sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 48px
+    line-height: 69px
+    color: #FFFFFF
+  &__content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    column-gap: 21px
+    &__item
+      cursor: pointer
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background: #FFBD6F
+      padding: 26px 21px 20px 21px
+      border-radius: 6px
+      img
+        width: 392px
+        height: 252px
+        margin-bottom: 12px
+      p
+        font-family: Jost, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 34px
+        line-height: 49px
+        color: #240000
+        margin: 0
+  a
+    text-decoration: none
+    padding: 18px 30px
+    background: #FFFFFF
+    border-radius: 7px
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 28px
+    text-align: center
+    color: #240000
+    margin-top: 92px
+    margin-bottom: 71px
+.why
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  padding-left: 90px
+  background: center right url("../img/why.png") no-repeat
+  p
+    margin: 83px 0 67px 0
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 55px
+    line-height: 61px
+    color: #723D2F
+  &__content
+    margin-bottom: 90px
+    &__item
+      margin-bottom: 44px
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 48px
+      line-height: 44px
+      color: #240000
+      padding-left: 50px
+      background: center left no-repeat url("../img/why_bg.svg")
+.works
+  background: #FFBD6F
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  &__header
+    margin: 34px 0 50px 0
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 48px
+    line-height: 69px
+    color: #000000
+  &__content
+    display: flex
+    flex-direction: row
+    justify-content: center
+    column-gap: 53px
+    margin-bottom: 100px
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      p
+        font-family: Jost, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 36px
+        line-height: 33px
+        text-align: center
+        color: #000000
+    &__item:nth-child(1)
+      p
+        margin-top: 37.2px
+      img
+        margin-top: 28px
+        width: 101px
+        height: 101px
+    &__item:nth-child(2)
+      p
+        margin-top: 35.6px
+      img
+        margin-top: 5px
+        width: 136px
+        height: 126px
+    &__item:nth-child(3)
+      p
+        margin-top: 35px
+      img
+        margin-top: 13px
+        width: 92px
+        height: 119px
+    &__item:nth-child(4)
+      p
+        margin-top: 39px
+      img
+        width: 126px
+        height: 128px
+    &__item:nth-child(5)
+      p
+        margin-top: 44px
+      img
+        margin-top: 2px
+        width: 87px
+        height: 121px
+.response
+  display: flex
+  flex-direction: column
+  align-items: center
+  p
+    margin: 26px 0 38px 0
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 64px
+    line-height: 92px
+    color: #723D2F
+  div
+    background: #FFBD6F
+    border-radius: 7px
+    padding: 12px
+  a
+    background: #FFBD6F
+    border-radius: 7px
+    margin: 73px 0 110px 0
+    padding: 27px 35px
+    text-decoration: none
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 40px
+    line-height: 47px
+    color: #240000
+footer
+  height: 164px
+  background: #8E4E33
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 32px 50px
+  box-sizing: border-box
+  .left
+    p:nth-child(1)
+      margin-bottom: 14px
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 22px
+      color: #FFFFFF
+    p:nth-child(2)
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 16px
+      color: #FFFFFF
+  .right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    row-gap: 13px
+    p
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 22px
+      color: #FFFFFF
+    a
+      text-decoration: none
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 22px
+      color: #FFFFFF
+  .center
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    column-gap: 20px
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1439px)
   body
     display: none
