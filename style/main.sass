@@ -16,9 +16,7 @@
 .container
   width: 1440px
   margin: 0 auto
-.container1440
-  min-width: 1440px
-  margin: 0 auto
+  padding: 0 40px
 header
   position: relative
 .navbar
@@ -30,7 +28,7 @@ header
   align-items: center
   justify-content: space-between
   &__contact
-    a
+    span
       padding: 6px 20px
       background: #FFBD6F
       text-decoration: none
@@ -42,6 +40,10 @@ header
       line-height: 23px
       color: #240000
       border-radius: 6px
+      transition: background 0.3s
+      &:hover
+        cursor: pointer
+        background: #f8a13a
   &__menu
     display: flex
     align-items: center
@@ -62,8 +64,11 @@ header
         font-weight: normal
         font-size: 24px
         line-height: 35px
-        color: #8E4E33
+        color: #8e4e33
         text-decoration: none
+        transition: color 0.3s
+        &:hover
+          color: black
 header
   .slick-dotted.slick-slider
     margin-bottom: 0
@@ -167,6 +172,10 @@ header
     line-height: 28px
     text-align: center
     color: #240000
+    transition: background 0.3s
+    &:hover
+      background: #f8a13a
+
 .splide
   width: 100%
   height: 442px
@@ -231,6 +240,9 @@ header
       background: #FFBD6F
       padding: 26px 21px 20px 21px
       border-radius: 6px
+      transition: background 0.3s
+      &:hover
+        background: #f8a13a
       img
         width: 392px
         height: 252px
@@ -243,7 +255,7 @@ header
         line-height: 49px
         color: #240000
         margin: 0
-  a
+  span
     text-decoration: none
     padding: 18px 30px
     background: #FFFFFF
@@ -257,6 +269,10 @@ header
     color: #240000
     margin-top: 92px
     margin-bottom: 71px
+    transition: background 0.3s
+    &:hover
+      background: #d4d3d3
+      cursor: pointer
 .why
   display: flex
   flex-direction: column
@@ -365,7 +381,7 @@ header
     background: #FFBD6F
     border-radius: 7px
     padding: 12px
-  a
+  span
     background: #FFBD6F
     border-radius: 7px
     margin: 73px 0 110px 0
@@ -377,6 +393,10 @@ header
     font-size: 40px
     line-height: 47px
     color: #240000
+    transition: background 0.3s
+    &:hover
+      background: #f8a13a
+      cursor: pointer
 footer
   height: 164px
   background: #8E4E33
@@ -422,22 +442,171 @@ footer
       font-size: 24px
       line-height: 22px
       color: #FFFFFF
+      transition: color 0.3s
+      &:hover
+        color: #cacaca
   .center
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
     column-gap: 20px
+.tingle-modal
+  .tingle-modal-box
+    &__content
+      background: #FFBD6F
+      .modal
+        .modal__form
+          display: flex
+          flex-direction: column
+          align-items: center
+          row-gap: 20px
+          width: 100%
+          div
+            display: flex
+            flex-direction: column
+            align-items: center
+            input
+              border: none
+              background-color: transparent
+              border-bottom: 3px solid #f8a13a
+              padding: 10px 20px
+              width: 300px
+              font-family: Jost, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 16px
+              line-height: 20px
+              color: #240000
+          button
+            background: #FFBD6F
+            border: 3px solid #f8a13a
+            padding: 10px 20px
+            margin-top: 20px
+            border-radius: 7px
+            width: 300px
+            font-family: Jost, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 22px
+            color: #240000
+            transition: background 0.3s
+            &:hover
+              background: #f8a13a
+input::-webkit-input-placeholder
+  font-family: Jost, sans-serif
+  font-style: normal
+  font-weight: 600
+  font-size: 16px
+  line-height: 20px
+  color: #515050
 
-
-
-
-
-
-
-
-
-
+.top
+  display: flex
+  flex-direction: column
+  &__header
+    margin-top: 30px
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 64px
+    line-height: 92px
+    color: #723D2F
+  &__content
+    margin-top: 37px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    flex-wrap: wrap
+    row-gap: 37px
+    column-gap: 45px
+    margin-bottom: 37px
+    div
+      border: 5px solid #FFBD6F
+      box-sizing: content-box
+      img
+        width: 100%
+        height: 100%
+  &__footer
+    p
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 36px
+      line-height: 40px
+      color: #240000
+    span
+      font-family: Jost, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 40px
+      color: #240000
+.plan
+  margin-top: 60px
+  &__header
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 48px
+    line-height: 69px
+    color: #723D2F
+  &__content
+    margin-top: 37px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    column-gap: 45px
+    row-gap: 37px
+.description
+  border-left: 16px solid #FFBD6F
+  padding-left: 20px
+  margin: 72px 0 30px 0
+  p
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 27px
+    color: #240000
+.footer
+  margin-top: 82px
+  margin-bottom: 82px
+  display: flex
+  flex-direction: column
+  align-items: center
+  p:nth-child(1)
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 64px
+    line-height: 92px
+    color: #723D2F
+    margin-bottom: 15px
+  p:nth-child(2)
+    margin-bottom: 52px
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 36px
+    line-height: 40px
+    color: #240000
+  span
+    background: #FFBD6F
+    padding: 27px 45px
+    border-radius: 7px
+    font-family: Jost, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 40px
+    line-height: 47px
+    color: #240000
+    transition: background 0.3s
+    &:hover
+      cursor: pointer
+      background: #f8a13a
 
 @media (max-width: 1439px)
   body

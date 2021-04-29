@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="splide/css/splide.min.css">
+    <link rel="stylesheet" href="js/tingle/tingle.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-    <div class="container1440">
         <header>
             <nav class="navbar">
                 <div class="navbar__menu">
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="navbar__contact">
-                    <a href="#">Связаться с нами</a>
+                    <span class="modal3">Связаться с нами</span>
                 </div>
             </nav>
             <div class="main-slide" id="slider1">
@@ -86,7 +86,7 @@
                         <p>Кирпичные дома</p>
                     </div>
                 </div>
-                <a href="#">Заказать себе дом</a>
+                <span class="modal">Заказать себе дом</span>
             </section>
             <section class="why">
                 <p>Почему выгодно<br> работать с нами?</p>
@@ -128,7 +128,7 @@
                 <div>
                     <img src="img/response.png" alt="img">
                 </div>
-                <a href="#">Заказать себе дом</a>
+                <span class="modal2">Заказать себе дом</span>
             </section>
         </main>
         <footer>
@@ -148,10 +148,32 @@
                 <a href="mailto:Info@domcomfort.spb.ru">Info@domcomfort.spb.ru</a>
             </div>
         </footer>
+
+    <div id="modal_content" class="modal">
+        <form action="#" method="post" class="modal__form">
+            <div>
+                <label for="FIO"></label>
+                <input type="text" id="FIO"  placeholder="Имя">
+            </div>
+            <div>
+                <label for="mail"></label>
+                <input type="email" id="mail"  placeholder="E-mail">
+            </div>
+            <div>
+                <label for="phone"></label>
+                <input type="tel" id="phone" placeholder="Телефон">
+            </div>
+            <div>
+                <label for="message"></label>
+                <input type="text" id="message" placeholder="Комментарий">
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
     </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="splide/js/splide.js"></script>
+    <script src="js/tingle/tingle.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
