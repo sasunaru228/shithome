@@ -47,3 +47,36 @@ if (document.querySelector('.modal') !== null){
     modal.setContent(modal_content);
 }
 
+
+$("#1").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".projects").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+
+$("#2").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".technology").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#3").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".why").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#4").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".works").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#5").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".response").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+$("#6").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".contact-us").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+});
+

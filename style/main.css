@@ -18,6 +18,10 @@
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1440px;
   margin: 0 auto;
@@ -275,7 +279,6 @@ header .arrow span:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 21px;
 }
 .technology__content__item {
   cursor: pointer;
@@ -287,6 +290,7 @@ header .arrow span:hover {
   padding: 26px 21px 20px 21px;
   border-radius: 6px;
   transition: background 0.3s;
+  margin-right: 21px;
 }
 .technology__content__item:hover {
   background: #f8a13a;
@@ -304,6 +308,9 @@ header .arrow span:hover {
   line-height: 49px;
   color: #240000;
   margin: 0;
+}
+.technology__content__item:nth-child(3) {
+  margin-right: 0;
 }
 .technology span {
   text-decoration: none;
@@ -377,10 +384,10 @@ header .arrow span:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 53px;
   margin-bottom: 100px;
 }
 .works__content__item {
+  margin-right: 53px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -393,6 +400,9 @@ header .arrow span:hover {
   line-height: 33px;
   text-align: center;
   color: #000000;
+}
+.works__content__item:nth-last-child(1) {
+  margin-right: 0;
 }
 .works__content__item:nth-child(1) p {
   margin-top: 37.2px;
@@ -503,7 +513,12 @@ footer .right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  row-gap: 13px;
+}
+footer .right * {
+  margin-bottom: 13px;
+}
+footer .right a:nth-child(3) {
+  margin-bottom: 0;
 }
 footer .right p {
   font-family: Jost, sans-serif;
@@ -531,20 +546,30 @@ footer .center {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  column-gap: 20px;
+}
+footer .center a {
+  margin-right: 20px;
+}
+footer .center a:nth-last-child(1) {
+  margin-right: 0;
 }
 
+.tingle-modal .tingle-modal-box {
+  background: inherit;
+}
 .tingle-modal .tingle-modal-box__content {
-  background: #FFBD6F;
+  border: 10px solid #FFBD6F;
+  border-radius: 30px;
+  background: #FFF;
 }
 .tingle-modal .tingle-modal-box__content .modal .modal__form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
   width: 100%;
 }
 .tingle-modal .tingle-modal-box__content .modal .modal__form div {
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -578,6 +603,7 @@ footer .center {
   transition: background 0.3s;
 }
 .tingle-modal .tingle-modal-box__content .modal .modal__form button:hover {
+  cursor: pointer;
   background: #f8a13a;
 }
 
@@ -609,11 +635,11 @@ input::-webkit-input-placeholder {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-  row-gap: 37px;
-  column-gap: 45px;
   margin-bottom: 37px;
 }
 .top__content div {
+  margin-bottom: 37px;
+  margin-right: 45px;
   border: 5px solid #FFBD6F;
   box-sizing: content-box;
 }
@@ -655,8 +681,10 @@ input::-webkit-input-placeholder {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  column-gap: 45px;
-  row-gap: 37px;
+}
+.plan__content div {
+  margin-bottom: 37px;
+  margin-right: 45px;
 }
 
 .description {
