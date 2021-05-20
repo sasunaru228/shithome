@@ -93,33 +93,33 @@ $("#6").click(function() { // ID откуда кливаем
 
 $("#11").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".projects").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".projects").offset().top  - 320 // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 
 $("#22").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".technology").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".technology").offset().top - 320  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 $("#33").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".why").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".why").offset().top - 320   // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 $("#44").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".works").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".works").offset().top - 320  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 $("#55").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".response").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".response").offset().top - 320  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 $("#66").click(function() { // ID откуда кливаем
     $('html, body').animate({
-        scrollTop: $(".contact-us").offset().top  // класс объекта к которому приезжаем
+        scrollTop: $(".contact-us").offset().top - 320  // класс объекта к которому приезжаем
     }, 1000); // Скорость прокрутки
 });
 
